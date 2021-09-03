@@ -3,7 +3,8 @@ import moment from "moment"
 
 import Header from "../../components/header.js"
 import Footer from "../../components/footer.js"
-import HeadMetadata from "../../components/headMetadata.js"
+import HeadMetadata from "../../components/HeadMetadata.js"
+//Updated Capitilisaiton in HeadMetadata.js
 
 import getAllBlogPosts from "../../api/getAllBlogPosts.js"
 
