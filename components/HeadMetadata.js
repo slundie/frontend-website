@@ -13,6 +13,7 @@ export default class extends Component {
         <meta name="theme-color" content="#ffffff" />
         <title>{this.props.title}</title>
         <meta name="description" content={this.props.metaDescription} />
+        <meta name="google-site-verification" content={process.env.GOOGLE_VERIFICATION_ID} />
       </Head>
     )
   }
