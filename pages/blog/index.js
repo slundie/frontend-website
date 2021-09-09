@@ -4,7 +4,8 @@ import moment from "moment"
 import Header from "../../components/header.js"
 import Footer from "../../components/footer.js"
 import HeadMetadata from "../../components/HeadMetadata.js"
-//Updated Capitilisaiton in HeadMetadata.js
+//Updated Capitilisaiton in HeadMetadata.js 
+import GoogleAnalytics from "../../components/googleAnalytics.js"
 
 import getAllBlogPosts from "../../api/getAllBlogPosts.js"
 
@@ -25,6 +26,7 @@ static async getInitialProps () {
           title="Blog Posts | Coding Blog"
           metaDescription="List of all blog posts published."
         />  
+        <GoogleAnalytics />
         <Header />
         <div className="blog-posts-container">
           <h1>Blog posts</h1>

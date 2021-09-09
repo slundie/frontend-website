@@ -4,7 +4,8 @@ import Header from "../components/header.js"
 import Footer from "../components/footer.js"
 import HeadMetadata from "../components/HeadMetadata.js"
 import getFiveNewestPosts from "../api/getFiveNewestPosts.js"
-
+import GoogleAnalytics from "../components/googleAnalytics.js"
+//Test
 export default class extends Component {
   static async getInitialProps () {
     const apiResult = await getFiveNewestPosts()
@@ -18,9 +19,10 @@ export default class extends Component {
     return (
       <div className="layout-wrapper">
         <HeadMetadata
-          title="Blog Space coding Rotaries 13B turbo"
+          title="Blog Space for the things I like Coding & Rotaries"
           metaDescription="Sam Lundie is a System Manager who likes to code Fullstack applicaions in  Node and writes about his interests here"
         />
+        <GoogleAnalytics />
         <Header />
         <div className="homepage-container">
           <div className="homepage-introduction">

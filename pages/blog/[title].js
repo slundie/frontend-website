@@ -10,6 +10,7 @@ import HeadMetadata from "../../components/HeadMetadata.js"
 import moment from "moment"
 
 import getBlogPostByUrlTitle from "../../api/getBlogPostByUrlTitle.js"
+import GoogleAnalytics from "../../components/googleAnalytics.js"
 
 export default class extends Component {
   static async getInitialProps ({ query }) {
@@ -33,6 +34,7 @@ export default class extends Component {
           title="Your Blog Post Title | Coding Blog"
           metaDescription="This meta description will be pulled from our backend REST API when we have it build later on in this course."
         />
+        <GoogleAnalytics />
         <Header />
         <div className="blog-post-container">
           {
